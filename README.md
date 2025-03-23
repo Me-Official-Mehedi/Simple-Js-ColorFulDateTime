@@ -10,8 +10,10 @@ A dynamic Node.js terminal timer that displays a live updating clock with colorf
 - [Installation](#installation)
 - [Usage](#usage)
 - [Customization](#customization)
+- [BangladeshTime](#Bangladesh Time)
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
+
 
 ## Features
 
@@ -83,6 +85,74 @@ Change chalk colors by replacing chalk.cyan(), chalk.green(), etc., with your pr
 
 - Starting Date/Time:
 Modify the DateVar variable to set a different starting time.
+
+## Bangladesh Time
+```
+// For CommonJS, use the following import:
+const chalk = require('chalk');
+// If you're using ES Modules, change the file extension to .mjs and use:
+// import chalk from 'chalk';
+
+function updateTimer() {
+  // Get the current time
+  const tDate = new Date();
+
+  // Define options for formatting the date in Bangladesh local time (Asia/Dhaka)
+  const options = {
+    timeZone: 'Asia/Dhaka',
+    weekday: 'long',
+    day: '2-digit',
+    month: 'short',
+    year: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false,
+  };
+
+  // Use Intl.DateTimeFormat to get the parts in Bangladesh local time
+  const parts = new Intl.DateTimeFormat('en-US', options).formatToParts(tDate);
+  let day, dayNumber, month, year, hour, minute, second;
+  parts.forEach(({ type, value }) => {
+    switch (type) {
+      case 'weekday':
+        day = value;
+        break;
+      case 'day':
+        dayNumber = value;
+        break;
+      case 'month':
+        month = value;
+        break;
+      case 'year':
+        year = value;
+        break;
+      case 'hour':
+        hour = value;
+        break;
+      case 'minute':
+        minute = value;
+        break;
+      case 'second':
+        second = value;
+        break;
+    }
+  });
+
+  console.clear(); // Clear the terminal to update the display
+  console.log(
+    chalk.cyan(day) + ", " +
+    chalk.green(dayNumber) + " " +
+    chalk.yellow(month) + ", " +
+    chalk.blue(year) + " " +
+    chalk.magenta(`${hour}:${minute}:${second}`) +
+    chalk.red(" BST")
+  );
+}
+
+// Update the timer every second
+setInterval(updateTimer, 1000);
+```
 
 ## Troubleshooting
 Chalk Import Errors:
