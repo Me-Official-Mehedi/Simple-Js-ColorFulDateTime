@@ -51,3 +51,19 @@ npm install chalk
 - Using CommonJS (if you prefer require()):
 
    - Install chalk version 4.1.2:
+```bash
+npm uninstall chalk
+npm install chalk@4.1.2
+```
+
+## Usage
+**Running the Timer**
+- For ES Modules (Chalk v5+):
+   - Ensure your timer file is renamed (e.g., DataTime.mjs) and update the import as follows:
+```bash
+import chalk from 'chalk';
+```
+- Run the timer using:
+```bash
+node DataTime.mjs
+```
