@@ -86,7 +86,7 @@ Change chalk colors by replacing chalk.cyan(), chalk.green(), etc., with your pr
 - Starting Date/Time:
 Modify the DateVar variable to set a different starting time.
 
-## Bangladesh Time
+## BangladeshTime
 ```
 // For CommonJS, use the following import:
 const chalk = require('chalk');
