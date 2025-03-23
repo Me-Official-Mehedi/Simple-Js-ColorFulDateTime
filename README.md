@@ -58,7 +58,7 @@ npm install chalk@4.1.2
 
 ## Usage
 **Running the Timer**
-- For ES Modules (Chalk v5+):
+- 1. For ES Modules (Chalk v5+):
    - Ensure your timer file is renamed (e.g., DataTime.mjs) and update the import as follows:
 ```bash
 import chalk from 'chalk';
@@ -66,4 +66,13 @@ import chalk from 'chalk';
 - Run the timer using:
 ```bash
 node DataTime.mjs
+```
+- 2. For CommonJS (Chalk v4.1.2):
+   - Use the following import in your timer file:
+```bash
+const chalk = require('chalk');
+```
+   - Run the timer using:
+```bash
+node DataTime.js
 ```
