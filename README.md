@@ -46,7 +46,7 @@ A dynamic Node.js terminal timer that displays a live updating clock with colorf
    - Install chalk (latest version):
 ```bash
 npm install chalk
-
+```
 
 - Using CommonJS (if you prefer require()):
 
