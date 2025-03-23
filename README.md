@@ -68,7 +68,6 @@ import chalk from 'chalk';
 node DataTime.mjs
 ```
 2. For CommonJS (Chalk v4.1.2):
-   - Use the following import in your timer file:
 ```bash
 const chalk = require('chalk');
 ```
@@ -76,3 +75,12 @@ const chalk = require('chalk');
 ```bash
 node DataTime.js
 ```
+## Customization
+- Date & Time Format:
+Adjust the format by modifying the strings in the console.log() call inside UpdateTimer().
+
+- Color Scheme:
+Change chalk colors by replacing chalk.cyan(), chalk.green(), etc., with your preferred colors or styles (e.g., chalk.red.bold()).
+
+- Starting Date/Time:
+Modify the DateVar variable to set a different starting time.
