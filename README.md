@@ -34,3 +34,13 @@ A dynamic Node.js terminal timer that displays a live updating clock with colorf
    ```bash
    git clone https://github.com/your-username/dynamic-terminal-timer.git
    cd dynamic-terminal-timer
+
+2. **Install dependencies:**
+
+There are two approaches depending on your preferred import style with chalk:
+
+- Using ES Modules (Recommended with Chalk v5+):
+
+- Rename your file to use the .mjs extension (e.g., DataTime.mjs).
+
+- Install chalk (latest version):
