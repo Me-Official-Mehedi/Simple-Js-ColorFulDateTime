@@ -37,12 +37,17 @@ A dynamic Node.js terminal timer that displays a live updating clock with colorf
 
 2. **Install dependencies:**
 
-There are two approaches depending on your preferred import style with chalk:
+- There are two approaches depending on your preferred import style with chalk:
 
-- Using ES Modules (Recommended with Chalk v5+):
-
-- Rename your file to use the .mjs extension (e.g., DataTime.mjs).
-
-- Install chalk (latest version):
+   - Using ES Modules (Recommended with Chalk v5+):
+   
+   - Rename your file to use the .mjs extension (e.g., DataTime.mjs).
+   
+   - Install chalk (latest version):
 ```bash
 npm install chalk
+
+
+- Using CommonJS (if you prefer require()):
+
+   - Install chalk version 4.1.2:
