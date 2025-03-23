@@ -10,7 +10,7 @@ A dynamic Node.js terminal timer that displays a live updating clock with colorf
 - [Installation](#installation)
 - [Usage](#usage)
 - [Customization](#customization)
-- [BangladeshTime](#Bangladesh Time)
+- [BangladeshTime](#BangladeshTime)
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
 
