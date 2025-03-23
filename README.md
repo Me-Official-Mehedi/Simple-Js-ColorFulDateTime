@@ -84,3 +84,14 @@ Change chalk colors by replacing chalk.cyan(), chalk.green(), etc., with your pr
 
 - Starting Date/Time:
 Modify the DateVar variable to set a different starting time.
+
+## Troubleshooting
+Chalk Import Errors:
+
+- If you see an error like chalk.cyan is not a function, verify if you are using the correct import for your version of chalk (see Installation section).
+
+- No Output/Terminal Issues:
+
+- Ensure your file is saved with the correct extension (.js for CommonJS or .mjs for ES Modules).
+
+- Verify that Node.js is correctly installed by running node -v.
