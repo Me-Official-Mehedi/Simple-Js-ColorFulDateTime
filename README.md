@@ -67,7 +67,7 @@ import chalk from 'chalk';
 ```bash
 node DataTime.mjs
 ```
-- 2. For CommonJS (Chalk v4.1.2):
+2. For CommonJS (Chalk v4.1.2):
    - Use the following import in your timer file:
 ```bash
 const chalk = require('chalk');
