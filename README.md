@@ -4,6 +4,9 @@
 
 A dynamic Node.js terminal timer that displays a live updating clock with colorful output using [chalk](https://github.com/chalk/chalk). This project is designed to run in your terminal and update every second, offering a vibrant display of the current date and time.
 
+![image](https://github.com/user-attachments/assets/062da137-d85b-4dee-84d9-0f560786d51b)
+
+
 ## Table of Contents
 
 - [Features](#features)
