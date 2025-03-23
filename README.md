@@ -12,7 +12,6 @@ A dynamic Node.js terminal timer that displays a live updating clock with colorf
 - [Customization](#customization)
 - [Troubleshooting](#troubleshooting)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -95,3 +94,16 @@ Chalk Import Errors:
 - Ensure your file is saved with the correct extension (.js for CommonJS or .mjs for ES Modules).
 
 - Verify that Node.js is correctly installed by running node -v.
+
+#  Contributing
+Contributions are welcome! Please follow these steps:
+
+Fork the repository.
+
+- Create a new branch (git checkout -b feature/YourFeature).
+
+- Commit your changes (git commit -m 'Add new feature').
+
+- Push your branch (git push origin feature/YourFeature).
+
+- Open a pull request.
