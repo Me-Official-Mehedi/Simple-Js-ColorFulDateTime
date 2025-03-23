@@ -44,3 +44,5 @@ There are two approaches depending on your preferred import style with chalk:
 - Rename your file to use the .mjs extension (e.g., DataTime.mjs).
 
 - Install chalk (latest version):
+```bash
+npm install chalk
